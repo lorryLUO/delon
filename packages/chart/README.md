@@ -5,7 +5,7 @@ Cache the dictionary, city data etc.
 ## Links
 
 - [Api Document](https://ng-alain.com/chart)
-- [Demo](https://cipchk.github.io/ng-alain/)
+- [Demo](//ng-alain.github.io/ng-alain/)
 
 ## Architecture
 

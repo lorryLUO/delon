@@ -47,13 +47,13 @@ ng-alain 左边主菜单，依赖于 `@delon/theme`。
 ----|------|-----
 text | `string` | 文本，必填项
 i18n | `string` | i18n主键
-group | `string` | 是否显示分组名，默认：`true`，指[示例](https://cipchk.github.io/ng-alain/)中的【主导航】字样
+group | `string` | 是否显示分组名，默认：`true`，指[示例](//ng-alain.github.io/ng-alain/)中的【主导航】字样
 link | `string` | 路由，`link`、`externalLink` 二选其一
 linkExact | `boolean` | 路由是否精准匹配，默认：`false` [#344](https://github.com/ng-alain/ng-alain/issues/344)
 externalLink | `string` | 外部链接，`link`、`externalLink` 二选其一
 target | `_blank,_self,_parent,_top` | 链接 target
-icon | `string` | 图标，指[示例](https://cipchk.github.io/ng-alain/)中的【仪表盘】前图标，只对一级菜单有效
-badge | `number` | 徽标数，展示的数字，指[示例](https://cipchk.github.io/ng-alain/)中的【小部件】后的红色块。（注：`group:true` 时无效）
+icon | `string` | 图标，指[示例](//ng-alain.github.io/ng-alain/)中的【仪表盘】前图标，只对一级菜单有效
+badge | `number` | 徽标数，展示的数字，指[示例](//ng-alain.github.io/ng-alain/)中的【小部件】后的红色块。（注：`group:true` 时无效）
 badgeDot | `boolean` | 徽标数，显示小红点
 badgeStatus | `string` | 徽标 Badge 颜色 （默认：error， 所有[颜色值](https://next.ng-alain.com/theme/tool#%E8%89%B2%E5%BD%A9)
 hide | `boolean` | 是否隐藏菜单

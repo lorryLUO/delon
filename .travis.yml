@@ -37,6 +37,7 @@ matrix:
   allow_failures:
     - env: "TASK=site:release"
     - env: "TASK=scaffold:release"
+    - env: "TASK=test:schematics"
 
 script:
   - npm run $TASK

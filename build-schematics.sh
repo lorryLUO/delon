@@ -8,6 +8,7 @@ cd ${currentDir}
 BUILD=false
 TEST=false
 DEBUG=false
+DEV=false
 for ARG in "$@"; do
   case "$ARG" in
     -t)
@@ -18,6 +19,9 @@ for ARG in "$@"; do
       ;;
     -debug)
       DEBUG=true
+      ;;
+    -dev)
+      DEV=true
       ;;
   esac
 done
@@ -67,8 +71,7 @@ copyFiles() {
     "${1}src/styles.less|${2}application/files/src/"
     # assets
     "${1}src/assets/*.svg|${2}application/files/src/assets/"
-    # TODO: only 2.0
-    # "${1}src/assets/*.less|${2}application/files/src/assets/"
+    "${1}src/assets/*.less|${2}application/files/src/assets/"
     "${1}src/assets/tmp/img/*|${2}application/files/src/assets/tmp/img/"
     "${1}src/assets/tmp/i18n/*|${2}application/files/src/assets/tmp/i18n/"
     "${1}src/assets/tmp/app-data.json|${2}application/files/src/assets/tmp/"
@@ -84,8 +87,7 @@ copyFiles() {
     # layout
     "${1}src/app/layout/fullscreen|${2}application/files/src/app/layout/"
     "${1}src/app/layout/passport|${2}application/files/src/app/layout/"
-    # TODO: only 2.0
-    # "${1}src/app/layout/default/setting-drawer|${2}application/files/src/app/layout/default/setting-drawer/"
+    "${1}src/app/layout/default/setting-drawer|${2}application/files/src/app/layout/default/"
     "${1}src/app/layout/default/default.component.html|${2}application/files/src/app/layout/default/"
     "${1}src/app/layout/default/default.component.spec.ts|${2}application/files/src/app/layout/default/"
     "${1}src/app/layout/default/default.component.ts|${2}application/files/src/app/layout/default/"
@@ -128,7 +130,12 @@ if [[ ${BUILD} == true ]]; then
   rsync -am --include="*.d.ts" --include="*/" --exclude=* ${SOURCE}/ ${DIST}/
   rsync -am --include="/files" ${SOURCE}/ ${DIST}/
   rm ${DIST}/test.ts ${DIST}/tsconfig.json ${DIST}/tsconfig.spec.json
-  copyFiles 'scaffold/' ${DIST}/
+
+  if [[ ${DEV} == true ]]; then
+    copyFiles '../ng-alain/' ${DIST}/
+  else
+    copyFiles 'scaffold/' ${DIST}/
+  fi
 
   cp ${SOURCE}/README.md ${DIST}/README.md
   cp ./LICENSE ${DIST}/LICENSE
@@ -141,11 +148,11 @@ if [[ ${TEST} == true ]]; then
   $JASMINE ${DIST}/**/*.spec.js
 fi
 
-echo "Finished test-schematics"
+echo "Finished cli!"
 
 # TODO: just only cipchk
 # clear | npm run test:schematics
-# clear | bash build-schematics.sh -b -debug
+# clear | bash build-schematics.sh -b -debug -dev
 if [[ ${DEBUG} == true ]]; then
   cd ../../
   DEBUG_FROM=${PWD}/work/delon/dist/packages-dist/schematics/*

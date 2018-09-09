@@ -94,11 +94,7 @@ export class TitleService implements OnDestroy {
   }
 
   /**
-   * 设置标题，若不指定具体名称，则按以顺序获取：
-   * - 路由配置 `{ data: { title: 'page name' } }`
-   * - 根据当前 URL 解析菜单数据
-   * - 页面 `content__title` 中获取 `h1` 内容
-   * - 默认标题名
+   * 设置标题
    */
   setTitle(title?: string | string[]) {
     if (!title) {

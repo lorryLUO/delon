@@ -141,7 +141,7 @@ Ant Design 并没有按钮色这一说，而是以视觉效果为基准。`nz-bu
 
 ### 全量颜色
 
-包含10*10=100种颜色面板，具体效果参见 [color page](//cipchk.github.io/ng-alain/#/elements/colors)。
+包含10*10=100种颜色面板，具体效果参见 [color page](//ng-alain.github.io/ng-alain/#/elements/colors)。
 
 ## Clearfix
 
@@ -391,7 +391,7 @@ Ant Design 是以 `12px` 为基准字号。
         </tr>
         <tr>
             <td><code>.modal-header</code></td>
-            <td>自定义Modal时非常有效，<a href="//cipchk.github.io/ng-alain/#/elements/modal" target="_blank">DEMO</a></td>
+            <td>自定义Modal时非常有效，<a href="//ng-alain.github.io/ng-alain/#/elements/modal" target="_blank">DEMO</a></td>
             <td></td>
         </tr>
         <tr>

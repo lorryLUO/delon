@@ -5,7 +5,7 @@ Simple user authentication, support Json Web Token & Simple Token.
 ## Links
 
 - [Api Document](https://ng-alain.com/auth)
-- [Demo](https://cipchk.github.io/ng-alain/)
+- [Demo](//ng-alain.github.io/ng-alain/)
 
 ## Architecture
 

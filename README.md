@@ -26,7 +26,7 @@ delon is a production-ready solution for admin business components packages, Bui
 
 + [Home Page](https://ng-alain.com)
 + [@delon](https://github.com/ng-alain/delon)
-+ [DEMO](https://cipchk.github.io/ng-alain/)
++ [DEMO](//ng-alain.github.io/ng-alain/)
 
 ## Architecture
 

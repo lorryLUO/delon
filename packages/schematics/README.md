@@ -14,7 +14,7 @@ Angular CLI Schematics of ng-alain.
 ## Links
 
 - [Api Document](https://ng-alain.com)
-- [Demo](https://cipchk.github.io/ng-alain/)
+- [Demo](//ng-alain.github.io/ng-alain/)
 
 ## Troubleshooting
 

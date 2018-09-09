@@ -509,7 +509,7 @@ type: Other
 `2018-3-16`
 
 - 脚手架
-  - 增加 Lodop 打印[示例页](https://cipchk.github.io/ng-alain/other/print)
+  - 增加 Lodop 打印[示例页](//ng-alain.github.io/ng-alain/other/print)
 - @delon/abc
   - 增加 [Lodop](/components/lodop) 组件，最强打印插件
   - 修复 `LazyService` 延迟加载资源的JS脚本的判断规则
@@ -739,7 +739,7 @@ type: Other
   - `simple-table` 变更：
       - **BREAKING CHANGES** 列描述 `url` 属性由 `data` 代替，数据源统一一个属性名，`0.6.0` 后将移除 `url` 属性
       - 新增列描述 `i18n` 属性，支持国际化
-      - 新增 `simple-table` 组件导出 Excel 方法，[Demo](//cipchk.github.io/ng-alain/tables/simple-table)
+      - 新增 `simple-table` 组件导出 Excel 方法，[Demo](//ng-alain.github.io/ng-alain/tables/simple-table)
       - 新增列描述、按钮组、过滤、选择项的 `acl` 参数，用于权限控制，[#158](https://github.com/ng-alain/ng-alain/issues/158)
       - 新增 `export()` 支持指定数组数据，[#162](https://github.com/ng-alain/ng-alain/issues/162)
   - 优化 `tag-cloud` 云词组件
@@ -797,7 +797,7 @@ type: Other
 
 - ng-alain 脚手架
   - 新增 [blank](//github.com/ng-alain/ng-alain/tree/blank) 基础版分支，如何使用见[文档](/docs/getting-started)
-  - 新增 [reuse-tab](https://cipchk.github.io/ng-alain/)、[simple-talbe](https://cipchk.github.io/ng-alain/tables/simple-table)、[UEditor](https://cipchk.github.io/ng-alain/editor/ueditor)、[Tinymce](https://cipchk.github.io/ng-alain/editor/tinymce)、[拆分视图](https://cipchk.github.io/ng-alain/other/split)、[剪贴板](https://cipchk.github.io/ng-alain/other/clipboard) 示例页
+  - 新增 [reuse-tab](//ng-alain.github.io/ng-alain/)、[simple-talbe](//ng-alain.github.io/ng-alain/tables/simple-table)、[UEditor](//ng-alain.github.io/ng-alain/editor/ueditor)、[Tinymce](//ng-alain.github.io/ng-alain/editor/tinymce)、[拆分视图](//ng-alain.github.io/ng-alain/other/split)、[剪贴板](//ng-alain.github.io/ng-alain/other/clipboard) 示例页
   - 修复无法启动 HMR 问题，[#130](https://github.com/ng-alain/ng-alain/issues/130) [Commit](https://github.com/ng-alain/ng-alain/commit/fca17fe7f74303e70ee2cfbac4dac0e032d426f4)
   - 修复i18n加载顺序问题，[#138](https://github.com/ng-alain/ng-alain/issues/138)
   - 重构 `layout` 文件夹结构，将 Pro 版本的用户页设置为默认授权页

@@ -5,7 +5,7 @@ Angular form generation based on JSON-Schema.
 ## Links
 
 - [Api Document](https://ng-alain.com/form)
-- [Demo](https://cipchk.github.io/ng-alain/)
+- [Demo](//ng-alain.github.io/ng-alain/)
 
 ## Architecture
 

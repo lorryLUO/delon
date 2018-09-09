@@ -5,7 +5,7 @@ ng-alain theme system library.
 ## Links
 
 - [Api Document](https://ng-alain.com)
-- [Demo](https://cipchk.github.io/ng-alain/)
+- [Demo](//ng-alain.github.io/ng-alain/)
 
 ## Architecture
 

@@ -5,7 +5,7 @@ Generate random data, intercept http requests.
 ## Links
 
 - [Api Document](https://ng-alain.com/mock)
-- [Demo](https://cipchk.github.io/ng-alain/)
+- [Demo](//ng-alain.github.io/ng-alain/)
 
 ## Architecture
 

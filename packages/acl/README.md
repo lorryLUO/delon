@@ -5,7 +5,7 @@ A simple role-based access control.
 ## Links
 
 - [Api Document](https://ng-alain.com/acl)
-- [Demo](https://cipchk.github.io/ng-alain/)
+- [Demo](//ng-alain.github.io/ng-alain/)
 
 ## Architecture
 
