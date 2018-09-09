@@ -87,11 +87,11 @@ fi
 
 if [[ ${DEPLOY} == true ]]; then
 
-  echo '===== copy package-lock.json to source scaffold'
-  cp -f ${ROOT_DIR}/package-lock.json ${SCAFFOLD_DIR}/package-lock.json
+  # echo '===== copy package-lock.json to source scaffold'
+  # cp -f ${ROOT_DIR}/package-lock.json ${SCAFFOLD_DIR}/package-lock.json
 
-  echo 'copy index.html > 404.html'
-  cp -f ${DIST_DIR}/index.html ${DIST_DIR}/404.html
+  # echo 'copy index.html > 404.html'
+  # cp -f ${DIST_DIR}/index.html ${DIST_DIR}/404.html
 
   echo 'deploy by gh-pages'
   # $(npm bin)/gh-pages-clean
