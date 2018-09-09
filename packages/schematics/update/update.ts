@@ -48,9 +48,9 @@ function getTsConfigPaths(tree: Tree): string[] {
   const workspace = getWorkspace(tree);
 
   for (const project of Object.values(workspace.projects)) {
-    if (project && project.architect) {
+    if (project && (project.targets || project.architect)) {
       for (const taskName of ['build', 'test']) {
-        const task = project.architect[taskName];
+        const task = (project.targets || project.architect)[taskName];
         if (task && task.options && task.options.tsConfig) {
           const tsConfigOption = task.options.tsConfig;
           if (typeof tsConfigOption === 'string') {

@@ -28,6 +28,12 @@ export interface Workspace {
     $schema?: string;
     [k: string]: any;
   };
+  /** Tool options. */
+  targets?: {
+    /** Link to schema. */
+    $schema?: string;
+    [k: string]: any;
+  };
   /** A map of project names to project options. */
   projects: {
     [k: string]: Project;
@@ -63,6 +69,8 @@ export interface Project {
     $schema?: string;
     [k: string]: any;
   };
+  /** Tool options. */
+  targets?: ProjectBuildOptions;
   /** Tool options. */
   architect?: ProjectBuildOptions;
 }
